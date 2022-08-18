@@ -1,7 +1,7 @@
 # elonswap
-AMM Exchange on DogeChain
+AMM & DEX on the DogeChain network.
 
-[ELONSWAP.CC](https://elonswap.cc/)
+### [ELONSWAP.CC](https://elonswap.cc/)
 
 # Deployed on the DogeChain Network
 
