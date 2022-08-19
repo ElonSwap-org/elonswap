@@ -1,4 +1,4 @@
-// the DCTDEX Default token list lives here
+// the ELONSWAP Default token list lives here
 export const DEFAULT_TOKEN_LIST_URL =
   'https://gist.githubusercontent.com/ElonSwap-org/616ad64e7015b9542dbc77dc514d0868/raw/78cbbf8fa8c2fdd9dcf807485e3c8ac68d7017ee/tokens.json'
 
