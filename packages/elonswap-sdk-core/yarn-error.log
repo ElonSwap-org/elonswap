@@ -1,0 +1,96 @@
+Arguments: 
+  /root/.nvm/versions/node/v12.15.0/bin/node /usr/share/yarn/bin/yarn.js add immutable@npm:@elonswap/core-sdk
+
+PATH: 
+  /root/.nvm/versions/node/v12.15.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  12.15.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@elonswap%2fcore-sdk: Not found
+      at Request.params.callback [as _callback] (/usr/share/yarn/lib/cli.js:66145:18)
+      at Request.self.callback (/usr/share/yarn/lib/cli.js:140890:22)
+      at Request.emit (events.js:223:5)
+      at Request.<anonymous> (/usr/share/yarn/lib/cli.js:141862:10)
+      at Request.emit (events.js:223:5)
+      at IncomingMessage.<anonymous> (/usr/share/yarn/lib/cli.js:141784:12)
+      at Object.onceWrapper (events.js:312:28)
+      at IncomingMessage.emit (events.js:228:7)
+      at endReadableNT (_stream_readable.js:1185:12)
+      at processTicksAndRejections (internal/process/task_queues.js:81:21)
+
+npm manifest: 
+  {
+    "name": "@elonswap/core-sdk",
+    "license": "MIT",
+    "version": "1.0.0",
+    "description": "🛠 SDK for building applications on top of Uniswap in DogeChain Network.",
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts",
+    "files": [
+      "dist"
+    ],
+    "repository": "https://github.com/darwinia-network/dvm-workshop",
+    "keywords": [
+      "uniswap",
+      "ethereum",
+      "elonswap"
+    ],
+    "module": "dist/sdk.esm.js",
+    "scripts": {
+      "lint": "tsdx lint src test",
+      "build": "tsdx build",
+      "start": "tsdx watch",
+      "test": "tsdx test",
+      "prepublishOnly": "tsdx build",
+      "cp-to-interface": "mkdir ../uniswap-interface/node_modules/elonswap && cp -r ./dist ../uniswap-interface/node_modules/elonswap/ && cp -rf ./package.json ../uniswap-interface/node_modules/elonswap"
+    },
+    "dependencies": {
+      "@uniswap/v2-core": "^1.0.0",
+      "big.js": "^5.2.2",
+      "decimal.js-light": "^2.5.0",
+      "jsbi": "^3.1.1",
+      "tiny-invariant": "^1.1.0",
+      "tiny-warning": "^1.0.3",
+      "toformat": "^2.0.0"
+    },
+    "peerDependencies": {
+      "@ethersproject/address": "^5.0.0-beta",
+      "@ethersproject/contracts": "^5.0.0-beta",
+      "@ethersproject/networks": "^5.0.0-beta",
+      "@ethersproject/providers": "^5.0.0-beta",
+      "@ethersproject/solidity": "^5.0.0-beta"
+    },
+    "devDependencies": {
+      "@ethersproject/address": "^5.0.2",
+      "@ethersproject/contracts": "^5.0.2",
+      "@ethersproject/networks": "^5.0.2",
+      "@ethersproject/providers": "^5.0.5",
+      "@ethersproject/solidity": "^5.0.2",
+      "@types/big.js": "^4.0.5",
+      "@types/jest": "^24.0.25",
+      "babel-plugin-transform-jsbi-to-bigint": "^1.3.1",
+      "tsdx": "^0.14.1"
+    },
+    "engines": {
+      "node": ">=10"
+    },
+    "prettier": {
+      "printWidth": 120,
+      "semi": false,
+      "singleQuote": true
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
